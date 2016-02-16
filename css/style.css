@@ -1,3 +1,10 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
 	background-color: LightGray;
 	font-family: 'Roboto', sans-serif;
@@ -7,7 +14,7 @@ body {
 }
 
 div {
-	border: 1px solid Chocolate;
+	border: 1px solid gray;
 }
 
 /* Navigation Section */
@@ -39,3 +46,41 @@ div {
 	padding: 1rem;
 	list-style: none;
 }
+.top-navigation > .content > .links > .active {
+	color: #f15b2a;
+	font-weight: 600;
+}
+.top-navigation > .content > .links > .login {
+	color: #fff;
+	font-weight: 500;
+    padding: .6rem 1rem; 
+    margin-left: 1.2rem;
+    background: #838994;
+    border-radius: .5rem;
+}
+
+/*Navigation Link Action Properties*/
+
+.top-navigation > .content > .links > .other-links:hover {
+	color: #f15b2a;
+	text-shadow: 0rem 0rem 1rem white;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+.top-navigation > .content > .links > .active:hover {
+	color: #838994;
+	transition: all 0.6s ease 0s;
+	cursor: pointer;
+}
+.top-navigation > .content > .links > .login:hover {
+	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+	color: #fff;
+	text-shadow: 0rem 0rem 1rem white;
+	background: #ffb039;
+	transition: all 0.25s ease 0.1s;
+	cursor: pointer;
+}
+
+/*text-shadow: .2rem .2rem .4rem #838994;*/
