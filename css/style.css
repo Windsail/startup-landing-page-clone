@@ -82,5 +82,48 @@ div {
 	transition: all 0.25s ease 0.1s;
 	cursor: pointer;
 }
-
+.introduction {
+	background-image: "first-background.jpg"
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45.938rem;
+	overflow: auto;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	border: 0px;
+	border-color: none;
+}
+.content {
+	width: 60%;
+	padding: 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
+}
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+div {
+	display: block;
+}
+h1 {
+	-webkit-margin: 0.83em;
+	display: block;
+}
+h3 {
+	-webkit-margin: 1em;
+	display: block;
+}
 /*text-shadow: .2rem .2rem .4rem #838994;*/
