@@ -89,6 +89,30 @@ div {
 	background-size: cover;
 	height: 45.938rem;
 }
+
+.introduction .content h1,
+.introduction .content h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+.introduction .content h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.introduction .content h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+.introduction .content .buttons {
+	background-color: rgb(241, 90, 41);
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+	margin-top: 1.563rem;
+	width: 49%;
+	box-sizing: border-box;
+	}
 .content {
 	width: 60%;
 	padding: 0.938rem;
