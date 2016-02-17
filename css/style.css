@@ -10,7 +10,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 1em;
-	letter-spacing: .03em;
+	letter-spacing: .02em;
 }
 
 div {
@@ -43,12 +43,12 @@ div {
 
 .top-navigation > .content > .links > li {
 	display: inline-block;
-	padding: 1rem;
+	padding: .5rem;
 	list-style: none;
 }
 .top-navigation > .content > .links > .active {
 	color: #f15b2a;
-	font-weight: 600;
+	font-weight: 500;
 }
 .top-navigation > .content > .links > .login {
 	color: #fff;
@@ -61,33 +61,33 @@ div {
 
 /*Navigation Link Action Properties*/
 
+.top-navigation > .content > .links > .active:hover {
+	color: #ffb039;
+	transition: all 0.6s ease 0s;
+	cursor: pointer;
+}
 .top-navigation > .content > .links > .other-links:hover {
-	color: #f15b2a;
+	color: #ffb039;
 	text-shadow: 0rem 0rem 1rem white;
 	transition: all 0.4s ease 0s;
 	cursor: pointer;
 }
-.top-navigation > .content > .links > .active:hover {
-	color: #838994;
-	transition: all 0.6s ease 0s;
-	cursor: pointer;
-}
 .top-navigation > .content > .links > .login:hover {
-	-webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
 	color: #fff;
 	text-shadow: 0rem 0rem 1rem white;
 	background: #ffb039;
-	transition: all 0.25s ease 0.1s;
+	transition: all 0.25s ease 0s;
 	cursor: pointer;
 }
+
+/* Introduction Section */
+
 .introduction {
 	background-image: url('../images/first-background.jpg');
-	background-position: center bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 45.938rem;
+	height: 40rem;
 }
 
 .introduction .content h1,
@@ -97,25 +97,41 @@ div {
 	font-weight: 300;
 }
 .introduction .content h1 {
-	margin-top: 17.5rem;
+	margin-top: 12.5rem;
 	font-size: 3.125rem;
 }
 .introduction .content h3 {
-	margin-top: 1.25rem;
+	margin-top: -1rem;
+	padding-top: -.5rem;
 	font-size: 1.563rem;
 }
 .introduction .content .buttons {
+	font-size: 1.1em;
+}
+.buttons {
 	background-color: rgb(241, 90, 41);
-	border-radius: 4px;
+	border-radius: .35rem;
+	letter-spacing: .03rem;
 	color: white;
 	text-align: center;
+	display: block;
+	margin: 0 auto;
 	margin-top: 1.563rem;
-	width: 49%;
-	box-sizing: border-box;
-	}
+	margin-bottom: 1.563rem;
+	width: 14%;
+	text-shadow: none;
+	border-style: none;
+	padding: 1rem 1.5rem;
+}
+.buttons:hover {
+	background: #ffb039;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
 .content {
 	width: 60%;
 	padding: 0.938rem;
+	display: block;
 	margin: 0 auto;
 	min-width: 37.5rem;
 }
