@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	vertical-align: baseline;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -14,14 +15,22 @@ body {
 }
 
 div {
-	border: 1px solid gray;
+	/*border: 1px solid gray;*/
+}
+.content {
+	width: 60%;
+	padding: 0.938rem;
+	display: block;
+	margin: 0 auto;
+	min-width: 37.5rem;
 }
 
 /* Navigation Section */
+
 .top-navigation {
 	background-color: #fff;
 }
-.top-navigation > .content {
+.top-navigation .content {
 	width: 100%;
 	min-width: 37.5rem;
 	max-width: 60%;
@@ -30,10 +39,10 @@ div {
 	padding: 0px 1rem;
 	box-sizing: border-box;
 }
-.top-navigation > .content > .logo {
+.top-navigation .content .logo {
 	height: 4.375rem;
 }
-.top-navigation > .content > .links {
+.top-navigation .content .links {
 	float: right;
 	color: #838994;
 	font-size: 1.08rem;
@@ -41,16 +50,16 @@ div {
 	margin-left: 1rem;
 }
 
-.top-navigation > .content > .links > li {
+.top-navigation .content .links > li {
 	display: inline-block;
 	padding: .5rem;
 	list-style: none;
 }
-.top-navigation > .content > .links > .active {
+.top-navigation .content .links .active {
 	color: #f15b2a;
 	font-weight: 500;
 }
-.top-navigation > .content > .links > .login {
+.top-navigation .content .links .login {
 	color: #fff;
 	font-weight: 500;
     padding: .6rem 1rem; 
@@ -61,18 +70,18 @@ div {
 
 /*Navigation Link Action Properties*/
 
-.top-navigation > .content > .links > .active:hover {
+.top-navigation .content .links .active:hover {
 	color: #ffb039;
 	transition: all 0.6s ease 0s;
 	cursor: pointer;
 }
-.top-navigation > .content > .links > .other-links:hover {
+.top-navigation .content .links .other-links:hover {
 	color: #ffb039;
 	text-shadow: 0rem 0rem 1rem white;
 	transition: all 0.4s ease 0s;
 	cursor: pointer;
 }
-.top-navigation > .content > .links > .login:hover {
+.top-navigation .content .links .login:hover {
 	color: #fff;
 	text-shadow: 0rem 0rem 1rem white;
 	background: #ffb039;
@@ -106,7 +115,7 @@ div {
 	font-size: 1.563rem;
 }
 .introduction .content .buttons {
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 .buttons {
 	background-color: rgb(241, 90, 41);
@@ -114,11 +123,12 @@ div {
 	letter-spacing: .03rem;
 	color: white;
 	text-align: center;
+	text-shadow: none;
 	display: block;
 	margin: 0 auto;
 	margin-top: 1.563rem;
 	margin-bottom: 1.563rem;
-	width: 14%;
+	width: 10rem;
 	text-shadow: none;
 	border-style: none;
 	padding: 1rem 1.5rem;
@@ -128,31 +138,65 @@ div {
 	transition: all 0.4s ease 0s;
 	cursor: pointer;
 }
-.content {
-	width: 60%;
-	padding: 0.938rem;
-	display: block;
-	margin: 0 auto;
-	min-width: 37.5rem;
+
+/* Three Cases Section */
+
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
 }
-div {
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+.cases .devices {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cases .devices li {
+    width: 33.3333333%;
+    float:right;
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 1.313rem;
+}
+
+
+/*div {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	box-sizing: border-box;
-}
-div {
 	display: block;
-}
+}*/
+
 h1 {
 	-webkit-margin: 0.83em;
+	display: block;
+}
+h2 {
+	-webkit-margin: 1em;
 	display: block;
 }
 h3 {
 	-webkit-margin: 1em;
 	display: block;
 }
+
 /*text-shadow: .2rem .2rem .4rem #838994;*/
