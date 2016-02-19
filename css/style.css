@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	background-color: LightGray;
+	background-color: gray;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 1em;
@@ -29,6 +29,9 @@ div {
 
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 .top-navigation .content {
 	width: 100%;
@@ -96,7 +99,8 @@ div {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 40rem;
+	height: 45.938rem;
+	background-position: bottom;
 }
 
 .introduction .content h1,
@@ -106,7 +110,7 @@ div {
 	font-weight: 300;
 }
 .introduction .content h1 {
-	margin-top: 12.5rem;
+	margin-top: 15.5rem;
 	font-size: 3.125rem;
 }
 .introduction .content h3 {
@@ -147,7 +151,7 @@ div {
     padding-bottom: 5rem;
 }
 .cases .content {
-    margin-top: 7.875rem;
+    margin-top: 5rem;
     padding: none;
     color: #1d1e21;
     text-align: center;
@@ -165,7 +169,7 @@ div {
 
 .cases .devices li {
     width: 33.3333333%;
-    float:right;
+    float:left;
 }
 .cases .devices h3 {
     font-weight: 400;
