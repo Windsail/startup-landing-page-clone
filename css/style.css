@@ -20,7 +20,6 @@ div {
 .content {
 	width: 60%;
 	padding: 0.938rem;
-	display: block;
 	margin: 0 auto;
 	min-width: 37.5rem;
 }
@@ -183,18 +182,22 @@ div {
 
 /* Footer/Social section */
 
+.social {
+	background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.icons {
+	margin: 0;
+	padding: 0;
+}
 .social hr {
 	border: 0;
 	border-top: 1px solid gray;
 	margin: 1.313rem 0;
 	display: block;
 	-webkit-margin: 0.5em 0;
-}
-.social {
-	background-color: #fff;
-    overflow: hidden;
-    padding-bottom: 5rem;
-    text-align: center;
 }
 .social .icons li {
 	display: inline-block;
@@ -216,7 +219,11 @@ div {
 	font-size: 1rem;
 	font-weight: 300;
 	margin: 1rem;
-
+}
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
 }
 
 /*div {
